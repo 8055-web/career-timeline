@@ -1,0 +1,84 @@
+/* Global Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9fbfd;
+  margin: 0;
+  padding: 0;
+}
+
+/* Timeline Container */
+.timeline-section {
+  display: flex;
+  justify-content: center;
+  padding: 100px 20px;
+}
+
+.timeline {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Horizontal line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to left, #00b894, #0984e3);
+  border-radius: 3px;
+}
+
+/* Timeline Item */
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 22%;
+}
+
+/* Circles marker */
+.circles {
+  width: 20px;
+  height: 20px;
+  background-color: #0984e3;
+  border-radius: 50%;
+  position: relative;
+  top: -40px;
+}
+
+/* Active circles (first one green) */
+.timeline-item.active .circles {
+  background-color: #00b894;
+}
+
+/* Cards box */
+.cards {
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
+  margin-top: 2px;
+  text-align: center;
+  width: 180px;
+  height: 150px;
+  background: #f9fbfd;
+}
+
+.cards h3 {
+  color: #0984e3;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.cards p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
